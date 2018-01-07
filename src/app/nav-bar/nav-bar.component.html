@@ -1,0 +1,31 @@
+<nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+
+    <a class="navbar-brand d-inline align-middle" [routerLink]="[ '/' ]">
+        <img src="/assets/icon.svg" alt="" class="" /> ploddon
+    </a>
+
+    <button class="navbar-toggler" type="button" (click)="navbarCollapsed = !navbarCollapsed" [attr.aria-expanded]="!navbarCollapsed"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse" [ngbCollapse]="navbarCollapsed" id="navbarContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" [routerLinkActive]="['active']">
+                <a class="nav-link text-center" [routerLink]="['/']" (click)="navbarCollapsed = true">
+                    home
+                </a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']">
+                <a class="nav-link text-center" [routerLink]="['/blog']" (click)="navbarCollapsed = true">
+                    blog
+                </a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']">
+                <a class="nav-link text-center" [routerLink]="['/placeholder']" (click)="navbarCollapsed = true">
+                    placeholder
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

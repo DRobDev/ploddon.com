@@ -1,0 +1,13 @@
+// @import "./fonts/league-spartan-bold/league-spartan-bold";
+
+@font-face {
+    font-family: 'league-spartan-bold';
+    src: url('/assets/fonts/league-spartan-bold/leaguespartan-bold.woff') format('woff'),
+         url('/assets/fonts/league-spartan-bold/leaguespartan-bold.ttf') format('truetype'),
+         url('/assets/fonts/league-spartan-bold/LeagueSpartan-Bold.otf') format('opentype'),
+         url('/assets/fonts/league-spartan-bold/leaguespartan-bold.eot') format('embedded-opentype');
+  };
+
+
+@import "./variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";

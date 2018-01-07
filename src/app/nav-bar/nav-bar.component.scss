@@ -1,0 +1,67 @@
+@import '~styles/variables';
+
+
+.navbar{
+    font-family: $plod-title-font;
+        padding-top: 0;
+        padding-bottom: 0;
+
+    .navbar-brand{
+        font-size: $h1-font-size;
+        color: $plod-green; 
+        margin-right: 64px;
+        img{
+            width: $plod-nav-icon-size;
+            height: $plod-nav-icon-size;
+        }
+    }
+
+    .nav-item{
+        font-size: $h4-font-size;
+        
+        @media (min-width: map-get($map: $grid-breakpoints, $key: lg)) {
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+        &.active{
+            background-color: $plod-green; 
+
+            .nav-link{
+                color: $plod-gray;
+            }
+        }
+
+        .nav-link{
+            color: $plod-green;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+ 
+    }
+
+    .navbar-collapse{
+     min-height: $plod-nav-icon-size;
+    //  background-color: red;
+    }
+    
+   .navbar-brand{
+      padding: 0;
+   }
+
+   .navbar-toggler{
+       outline-color: $plod-green;
+   }
+}
+
+
+
+.outer-div
+{
+     padding: 30px;
+}
+.inner-div
+{
+     margin: 0 auto;
+     max-width: 700px; 
+}
