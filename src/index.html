@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Ploddon.Com</title>
@@ -8,7 +9,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
-  <app-root></app-root>
+
+  <app-root>
+
+    <!-- loading spinner -->
+    <style>
+      .spinner-start {
+        animation-name: spin;
+        animation-duration: .6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        -moz-animation-name: spin;
+        -moz-animation-duration: .6s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -o-animation-name: spin;
+        -o-animation-duration: .6s;
+        -o-animation-iteration-count: infinite;
+        -o-animation-timing-function: linear;
+        -webkit-animation-name: spin;
+        -webkit-animation-duration: .6s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <svg class="spinner-start" width="50" height="50" style="fill:#343838; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%)">
+      <path d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+      </path>
+    </svg>
+    <!-- loading spinner -end -->
+
+  </app-root>
 </body>
+
 </html>
